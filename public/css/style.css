@@ -1,0 +1,214 @@
+.header,
+.fotter,
+.thanks-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.thanks-body {
+flex-direction: column;
+}
+.header_title {
+  font-size: 30px;
+  letter-spacing: 0.05em;
+}
+.form-group,
+.form-confirm,
+.thanks-body {
+  height: 100vh;
+}
+.form-group {
+  margin: 0 3%;
+}
+.form-confirm {
+  margin: 0 20%;
+}
+.required {
+  color: #FF0000;
+}
+.form-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.form-item {
+  font-weight: bold;
+  width: 15%;
+}
+.input_last,
+.input_first {
+  height: 45px;
+  width: 95%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #C0C0C0;
+  font-size: 25px;
+}
+.input_last_name,
+.input_first_name {
+  position: relative;
+  width: 45%;
+}
+.input_last_name::before {
+  content: "例）山田";
+}
+.input_first_name::before {
+  content: "例）太郎";
+}
+.input_last_name::before,
+.input_first_name::before {
+  position: absolute;
+  top: 130%;
+  left: 5%;
+  color: #C0C0C0;
+}
+.form-gender {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.radio-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.radio-btn Input {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+.radio-btn Input:focus+.radio-btn-DummyInput {
+  border: solid 2px #333333;
+  background: #EEEEEE;
+}
+.radio-btn Input:checked+.radio-btn-DummyInput {
+  border: solid 2px #333333;
+}
+.radio-btn Input:checked+.radio-btn-DummyInput::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #333333;
+}
+.radio-btn-DummyInput {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  border: solid 2px #888;
+}
+.label-text {
+  margin-left: 12px;
+  display: block;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.form-email,
+.form-postcode,
+.form-address,
+.form-building_name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.input_email,
+.input_postcode,
+.input_address,
+.input_building_name {
+  height: 45px;
+  width: 98%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #C0C0C0;
+  font-size: 25px;
+}
+.input_email_form,
+.input_postcode_form,
+.input_address_form,
+.input_building_name_form {
+  position: relative;
+  width: 90%;
+}
+.input_email_form::before,
+.input_postcode_form::before,
+.input_address_form::before,
+.input_building_name_form::before {
+  position: absolute;
+  top: 130%;
+  left: 5%;
+  color: #C0C0C0;
+}
+.input_email_form::before {
+  content: "例）test@example.com";
+}
+.input_postcode_form::before {
+  content: "例）123-4567";
+}
+.input_address_form::before {
+  content: "例）東京都渋谷区千駄ヶ谷1-2-3";
+}
+.input_building_name_form::before {
+  content: "例）千駄ヶ谷マンション101";
+}
+.form-opinion {
+  display: flex;
+}
+.input_opinion {
+  resize: none;
+  height: 150px;
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #C0C0C0;
+  font-size: 25px;
+}
+.post-mark {
+  font-weight: bold;
+  margin: 5px 15px;
+}
+.confirm-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+}
+.input_data {
+  margin-left: 5%;
+}
+.next-btn {
+  display: block;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.page-end,
+.fix-btn {
+  display: block;
+  margin: 10px auto;
+}
+.fix-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  text-decoration: underline #000000;
+}
+.thanks-message{
+  margin-bottom: 75px;
+}
